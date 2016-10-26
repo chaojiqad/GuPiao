@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.subzero.shares.activity.xlistview.XListView
+        android:id="@+id/xlv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_orde_mycommit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg_color"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usercenter_rl_layout_height"
+        android:background="@color/usercenter_rl_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_ico_back"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:layout_marginLeft="@dimen/space_left" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提问"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize1"
+            android:textColor="@color/usercenter_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="172dp">
+
+        <EditText
+            android:id="@+id/et_reply"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入您想提问的问题"
+            android:background="@null"
+            android:padding="10dp"
+            android:gravity="top"
+            android:textSize="@dimen/textsize2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_replyuser"
+        android:layout_width="fill_parent"
+        android:layout_margin="@dimen/space_left"
+        android:layout_height="56dp"
+        android:background="#CC3300"
+        android:text="提交"
+        android:textSize="@dimen/textsize1"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        />
+</LinearLayout>
+</LinearLayout>

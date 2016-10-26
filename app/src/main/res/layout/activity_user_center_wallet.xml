@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/usercenter_rl_layout_height"
+                android:background="@color/usercenter_rl_bg">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space_left"
+                    android:src="@mipmap/nav_ico_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="我的钱包"
+                    android:textColor="@color/usercenter_tv"
+                    android:textSize="@dimen/textsize1" />
+
+                <TextView
+                    android:id="@+id/tv_income_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_right"
+                    android:text="收支记录"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/textsize2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="174dp"
+                android:background="@color/usercenter_rl_bg">
+
+                <com.subzero.shares.view.CircleImageView
+                    android:id="@+id/iv_userlogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_userlogo"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/tv_usercenter_grade"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="虚拟币"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/textsize1" />
+
+            </RelativeLayout>
+
+            <!--分隔线-->
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+
+            <!--分隔条-->
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:id="@+id/rl_expend"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_toRightOf="@+id/iv_item1"
+                    android:text="我的支出"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_right"
+                    android:src="@mipmap/list_icon_more" />
+            </RelativeLayout>
+
+            <!--分隔条-->
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+
+            <!--分隔条-->
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:id="@+id/rl_incomes"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_toRightOf="@+id/iv_item1"
+                    android:text="我的赚取"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_right"
+                    android:src="@mipmap/list_icon_more" />
+            </RelativeLayout>
+
+            <!--分隔条-->
+            <include layout="@layout/view_deline" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_usercenter_ll_layout_height"
+        android:layout_alignParentBottom="true"
+        android:background="#CC3300"
+        android:gravity="center"
+        android:text="充值"
+        android:textColor="#fff"
+        android:textSize="@dimen/textsize2" />
+</RelativeLayout>

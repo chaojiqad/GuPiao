@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- 底部导航 -->
+    <dimen name="footNavi_item_text_size">16dp</dimen>
+    <dimen name="footNavi_item_paddingTop">5dp</dimen>
+    <dimen name="footNavi_item_paddingLeft">5dp</dimen>
+    <dimen name="footNavi_item_paddingRight">5dp</dimen>
+    <dimen name="footNavi_item_paddingBottom">2dp</dimen>
+
+
+    <!-- 开户-->
+    <dimen name="kaihu_text_size">16sp</dimen>
+    <dimen name="kaihu_marginRight">20dp</dimen>
+    <dimen name="kaihu_marginBottom">2dp</dimen>
+    <!-- 顶部导航 -->
+    <dimen name="head_item_text_size">16dp</dimen>
+    <dimen name="head_item_paddingTop">0dp</dimen>
+    <dimen name="head_item_paddingLeft">5dp</dimen>
+    <dimen name="head_item_paddingRight">5dp</dimen>
+    <dimen name="head_item_paddingBottom">2dp</dimen>
+
+    <!--交流悬赏令页面尺寸-->
+    <dimen name="margin_left_right">10dp</dimen>
+    <dimen name="icon_wid_hei_communicate">60dp</dimen>
+    <dimen name="margin_top_bottom">20dp</dimen>
+
+
+    <!--用户中心字体大小-->
+    <dimen name="textsize1">18sp</dimen>
+    <dimen name="textsize2">16sp</dimen>
+    <dimen name="textsize3">14sp</dimen>
+
+    <!--用户中心边距-->
+    <dimen name="space_left">15dp</dimen>
+    <dimen name="space_right">15dp</dimen>
+
+    <!--用户中心头部信息-->
+    <dimen name="usercenter_rl_layout_height">48dp</dimen>
+    <dimen name="usercenter_iv_layout_width">28dp</dimen>
+    <dimen name="usercenter_iv_layout_height">28dp</dimen>
+
+    <!--用户中心条目宽高-->
+    <dimen name="item_usercenter_ll_layout_height">56dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+    <!--发布悬赏令界面字体-->
+    <dimen name="text_size_commit_reward">16sp</dimen>
+    <!-- 顶部 导航栏高度 -->
+    <dimen name="topbar_height">50dp</dimen>
+
+    <!-- 应用边距尺寸 -->
+    <!-- 30 ~ 32px -->
+    <dimen name="big_space">18dp</dimen>
+    <!-- 20 ~ 24px -->
+    <dimen name="middle_space">14dp</dimen>
+    <!-- 14 ~ 18px -->
+    <dimen name="small_space">8dp</dimen>
+    <!-- <14px -->
+    <dimen name="tiny_space">4dp</dimen>
+
+    <!-- 顶部 导航栏标题字体大小 -->
+    <dimen name="topbar_textSize">20sp</dimen>
+    <!-- 顶部 导航栏标题字体大小 -->
+    <dimen name="topbar_right_textSize">18sp</dimen>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/usercenter_rl_layout_height"
+                android:background="@color/usercenter_rl_bg">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/nav_ico_back"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="诊股记录详情"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/textsize1"
+                    android:textColor="@color/usercenter_tv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66dp">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation_line"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高管亲属增持100股中坚科技差点被退市"
+                    android:textSize="@dimen/textsize1"
+                    android:textColor="@color/textcolor1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7月12日 13：30"
+                    android:textSize="@dimen/textsize3"
+                    android:textColor="@color/textcolor3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="6dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="128dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:src="@mipmap/adviser" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:src="@mipmap/shares" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="96dp"
+                    android:src="@mipmap/contest" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+                android:lines="3"
+                android:textSize="@dimen/textsize3"
+                android:textColor="@color/textcolor3"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据显示，自1月8日两融余额跌破1.1万亿元之后，沪深两市两融余额继续下降，截至1月13日，沪深两市融资余额报10234.75亿元。"
+                android:lines="3"
+                android:textSize="@dimen/textsize3"
+                android:textColor="@color/textcolor3"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp" />
+            <!--分割线-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:background="@color/separation_rl_bg"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation_line"
+                    android:layout_alignParentBottom="true" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation_line"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="58dp">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separation_line"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的回复"
+                    android:textSize="@dimen/textsize1"
+                    android:textColor="@color/textcolor1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_left" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66dp">
+
+                <ImageView
+                    android:id="@+id/iv_professional"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/bg_icon_blue"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高级顾问——冯小刚"
+                    android:textSize="@dimen/textsize1"
+                    android:textColor="@color/textcolor3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_professional"
+                    android:layout_marginLeft="@dimen/space_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:18"
+                    android:textSize="@dimen/textsize1"
+                    android:textColor="@color/textcolor3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="根据您所遇到的问题，我建议先留下来观察一天，如果到交叉线应马上果断持仓，以减少最少的损失，希望我的建议能够帮助你！"
+                android:lines="3"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="56dp">
+
+                <TextView
+                    android:id="@+id/tv_evaluate"
+                    android:layout_width="64dp"
+                    android:layout_height="22dp"
+                    android:text="评价"
+                    android:textSize="@dimen/textsize3"
+                    android:textColor="#fff"
+                    android:background="@drawable/shape_rect_solid_yellow"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_left" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:background="#CC3300"
+                android:text="回复"
+                android:textSize="@dimen/textsize1"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

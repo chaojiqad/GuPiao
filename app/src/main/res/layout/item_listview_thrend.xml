@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_item_thrend"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_main" />
+
+        <TextView
+            android:id="@+id/tv_item_title_thrend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_item_thrend"
+            android:text="我来到你的城市走过你来时的路"
+            android:textColor="#222222"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_news_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_thrend"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_item_thrend"
+            android:text="午间新闻"
+            android:textColor="#9C9C9C" />
+
+        <TextView
+            android:id="@+id/tv_item_time_thrend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_thrend"
+            android:layout_alignParentRight="true"
+            android:text="2016.4.6"
+            android:textColor="#9C9C9C" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_thrend"
+            android:layout_alignLeft="@id/tv_item_time_thrend"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="-16dp"
+            android:src="@mipmap/bg_ico_time" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgcolor">
+
+        <ImageView
+            style="@style/videocatory_item_line"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</RelativeLayout>

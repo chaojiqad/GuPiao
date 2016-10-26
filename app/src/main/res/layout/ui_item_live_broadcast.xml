@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_item_livebroadcast"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/shares" />
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_item_livebroadcast"
+            android:text="每日一招"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_item_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_toRightOf="@+id/iv_item_livebroadcast"
+            android:paddingTop="2dp"
+            android:text="主持人:"
+            android:textSize="@dimen/textsize3" />
+
+        <TextView
+            android:id="@+id/tv_advisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_title"
+            android:layout_toRightOf="@+id/tv_item_holder"
+            android:paddingTop="2dp"
+            android:text="彭大海"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize3" />
+
+        <TextView
+            android:id="@+id/tv_cls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_item_livebroadcast"
+            android:background="@drawable/shape_rect_red"
+            android:gravity="center"
+            android:text="炒股技术"
+            android:textColor="#ffd62320"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_rect_solid_yellow"
+            android:paddingRight="10dp"
+            android:textColor="#fff"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_state"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:paddingRight="10dp"
+            android:text="07:25"
+            android:textColor="@color/textcolor1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="12月21号"
+
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/textsize2" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+</LinearLayout>

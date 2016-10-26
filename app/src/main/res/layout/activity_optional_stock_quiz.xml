@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_left"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="股指竞猜"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/sv_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="52dp">
+
+                    <ImageView
+                        android:id="@+id/iv_arraw"
+                        android:layout_width="30dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:src="@mipmap/bg_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_arraw"
+                        android:text="股指竞猜结果"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/textsize1" />
+                </RelativeLayout>
+
+                <!--上证收红-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+
+                        android:id="@+id/shape_circle_red"
+                        style="@style/shape_circle_red_style"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_circle_red" />
+
+                    <ProgressBar
+                        android:id="@+id/received_red_progressbar"
+                        style="@style/mProgressBar"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/shape_circle_red"
+                        android:max="100"
+                        android:progress="59" />
+
+                    <TextView
+                        android:id="@+id/tv_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/received_red_progressbar"
+                        android:layout_marginRight="@dimen/space_right"
+                        android:text="59%"
+                        android:textSize="@dimen/textsize3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/received_red_progressbar"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/shape_circle_red"
+                        android:text="上证收红"
+                        android:textColor="#F10000"
+                        android:textSize="@dimen/textsize1" />
+                </RelativeLayout>
+
+                <!--上证收绿-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp">
+
+                    <TextView
+                        android:id="@+id/shape_circle_green"
+                        style="@style/shape_circle_red_style"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_circle_green" />
+
+                    <ProgressBar
+                        android:id="@+id/received_green_progressbar"
+                        style="@style/mProgressBar1"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/shape_circle_green"
+                        android:max="100"
+                        android:progress="59" />
+
+                    <TextView
+                        android:id="@+id/tv_green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/received_green_progressbar"
+                        android:layout_marginRight="@dimen/space_right"
+                        android:text="41%"
+                        android:textSize="@dimen/textsize3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/received_green_progressbar"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/shape_circle_green"
+                        android:text="上证收绿"
+                        android:textColor="#2E6D00"
+                        android:textSize="@dimen/textsize1" />
+                </RelativeLayout>
+                <!--分隔线-->
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp">
+
+                    <TextView
+                        android:id="@+id/tv_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:text="今天的赔率 : "
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <TextView
+                        android:id="@+id/tv_todayodds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_rate"
+                        android:text="1 : 1.5"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/textsize2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp">
+
+                    <TextView
+                        android:id="@+id/tv_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:text="您的收入 : "
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <TextView
+                        android:id="@+id/tv_incomes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_income"
+                        android:text="200虚拟币"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/textsize2" />
+                </RelativeLayout>
+
+                <!--分隔线-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp">
+
+                    <include layout="@layout/view_deline" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:text="竞猜规则"
+                    android:textSize="@dimen/textsize2" />
+
+                <TextView
+                    android:id="@+id/tv_rule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginRight="15dp"
+                    android:text="股指竞猜新规则介绍 股指竞猜新规则调整后的股指竞猜戏，将更好玩，更容易中奖。旧的股指竞猜游戏只有“单选”，“组选”两种玩法。规则调整后股指竞猜戏在现有投注方式的基础上"
+                    android:textSize="@dimen/textsize3" />
+
+                <!--分隔线-->
+                <include layout="@layout/view_deline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#F3F5F7"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <!--分隔线-->
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="52dp">
+
+                    <ImageView
+                        android:id="@+id/iv_arraw1"
+                        android:layout_width="30dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:src="@mipmap/bg_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_arraw1"
+                        android:text="股指明日上证股指"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize1" />
+                </RelativeLayout>
+
+                <!--分隔线-->
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="94dp">
+
+                    <ImageView
+                        android:id="@+id/bg_icon_red"
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="46dp"
+                        android:src="@mipmap/bg_icon_red" />
+
+                    <ImageView
+                        android:id="@+id/bg_icon_green"
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="46dp"
+                        android:src="@mipmap/bg_icon_blue" />
+                </RelativeLayout>
+                <!--分隔线-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp">
+
+                    <include layout="@layout/view_deline" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="54dp">
+
+                    <TextView
+                        android:id="@+id/tv_rate_tomo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:text="明天的赔率 : "
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <TextView
+                        android:id="@+id/tv_tomorrowodds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_rate_tomo"
+                        android:text="2 : 1.5"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="@dimen/textsize2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

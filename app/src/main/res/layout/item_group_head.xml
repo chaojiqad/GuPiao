@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/separation_rl_bg">
+
+        <include layout="@layout/view_deline" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <include layout="@layout/view_deline" />
+
+        <TextView
+            android:id="@+id/tv_item_group_head_id"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:background="@drawable/shape_usercenter_group"
+            android:gravity="center"
+            android:text="新用户"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+    </RelativeLayout>
+
+    <!--分隔条-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:background="@color/separation_rl_bg">
+
+        <include layout="@layout/view_deline" />
+    </RelativeLayout>
+</LinearLayout>

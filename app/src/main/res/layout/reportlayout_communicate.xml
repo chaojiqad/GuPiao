@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/basetitle_communicate" />
+
+        <EditText
+            android:id="@+id/et_conrent_report"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入的内容"
+            android:maxLength="200"
+            android:padding="@dimen/margin_left_right" />
+
+        <TextView
+            android:id="@+id/tv_num_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"
+            android:text="0/200" />
+
+        <TextView
+            android:id="@+id/tv_commmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="10dp"
+            android:background="#cc3300"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>

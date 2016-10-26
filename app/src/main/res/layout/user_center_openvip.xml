@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/basetitle_communicate" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_openvip_texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_openvip_texttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/content_textcolor"
+                android:text="您将开通会员"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textColor="@color/content_textcolor"
+                android:text="会员套餐"
+                android:textSize="16sp" />
+
+            <GridView
+                android:id="@+id/gridview_usercenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="120dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+
+        <ImageView style="@style/videocatory_item_line" />
+
+        <include layout="@layout/paylayout_common" />
+    </LinearLayout>
+</LinearLayout>

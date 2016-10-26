@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_ico_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问诊提问"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsize1"
+                android:textColor="@color/usercenter_tv" />
+        </RelativeLayout>
+        <!--分割线-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/textcolor3"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提问"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="近日股市如何让发展"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_right" />
+        </RelativeLayout>
+        <!--分割线-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="172dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入您要提问的问题"
+                android:gravity="top"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/300"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(最多三张) 帮您描述准确问题"
+                android:layout_centerVertical="true"
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="94dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:id="@+id/iv_upload1"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:src="@mipmap/adviser"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+            <ImageView
+                android:id="@+id/iv_upload2"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:src="@mipmap/adviser"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_toRightOf="@+id/iv_upload1" />
+
+            <ImageView
+                android:id="@+id/iv_upload3"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:src="@mipmap/adviser"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_toRightOf="@+id/iv_upload2" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:src="@mipmap/bg_icon_xj"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_right" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#CC3300"
+        android:text="提问"
+        android:textSize="@dimen/textsize1"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+
+        />
+</RelativeLayout>

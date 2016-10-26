@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFcc3300">
+
+
+    <RadioGroup
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rg_activtiy_index_head_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rg_activtiy_index_head_navi_1"
+            style="@style/rb_activity_index_head_navi"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_activity_index_head_1" />
+
+        <RadioButton
+            android:id="@+id/rg_activtiy_index_head_navi_2"
+            style="@style/rb_activity_index_head_navi"
+            android:background="@drawable/selector_activity_index_head_2"
+            android:textColor="#ffffffff" />
+    </RadioGroup>
+
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView"
+            android:padding="10dp"
+            style="@style/rb_activity_index_head_kaihu"
+            android:text="开户" />
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/search_bar"
+            style="@style/serchar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/nav_bg_ic_seach"
+            android:onClick="search" />
+
+
+</RelativeLayout>

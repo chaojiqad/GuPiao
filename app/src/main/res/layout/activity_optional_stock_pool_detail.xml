@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_left"
+                android:onClick="back"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="股票池详情"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:text="高管亲属增持100股中坚科技差点被退市"
+                android:textColor="@color/textcolor1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="黄金池"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/space_right"
+                android:text="7月12日 13:00"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textsize2" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:background="@color/separation_line" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_right"
+            android:layout_marginTop="8dp"
+            android:src="@color/textcolor2" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize3" />
+    </LinearLayout>
+</LinearLayout>

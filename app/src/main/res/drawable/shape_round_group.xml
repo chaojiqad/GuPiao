@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 圆角 -->
+    <corners android:radius="5dp" />
+
+    <!-- 大小 -->
+    <size
+        android:width="50dp"
+        android:height="50dp" />
+
+    <!-- 填充颜色 -->
+    <!--<solid android:color="#fdbd17"/>-->
+    <!--<solid android:color="#5276bf"/>-->
+    <!--<solid android:color="#fd719c"/>-->
+    <!--<solid android:color="#EB4E6B"/>-->
+    <solid android:color="#45d19c" />
+
+
+</shape>

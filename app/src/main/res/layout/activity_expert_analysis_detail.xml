@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_ico_back"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顾问详情"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsize1"
+                android:textColor="@color/usercenter_tv" />
+        </RelativeLayout>
+
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="94dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@mipmap/qq" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="28dp">
+
+                <TextView
+                    android:id="@+id/tv_fortune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="10虚拟币"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textsize3" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/tv_fortune"
+                    android:src="@mipmap/orange_big" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="首席顾问——李晨"
+                    android:textColor="@color/textcolor1"
+                    android:textSize="@dimen/textsize1" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="个人介绍："
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_marginTop="10dp"
+                android:lines="3"
+                android:text="如何从股票小白，快速成长为资深专家，精选每日事实话题，带你解开蒙面的面纱，课程精细，堪称绝！不想错过的朋友快来看看吧！"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textsize1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_marginTop="10dp"
+                android:text="取得成绩："
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_glory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_left"
+                android:layout_marginTop="10dp"
+                android:text="炒股大赛二等奖"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textsize2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="14dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/separation_rl_bg">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/separation_line" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/separation_line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="52dp">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:background="@color/separation_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="收到的评论"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="86dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginTop="10dp"
+                    android:text="冯小刚"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textsize1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:text="14:18"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textsize1" />
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/iv_start1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start2"
+                        android:src="@mipmap/icon_xx" />
+
+                    <ImageView
+                        android:id="@+id/iv_start2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start3"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start4"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start5"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:lines="1"
+                    android:text="老师分析的很到位！非常棒，感觉很有信心！"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize1" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:background="@color/textcolor3" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="86dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginTop="10dp"
+                    android:text="冯小刚"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textsize1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:text="14:18"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textsize1" />
+
+                <RelativeLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/iv_start11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start21"
+                        android:src="@mipmap/icon_xx" />
+
+                    <ImageView
+                        android:id="@+id/iv_start21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start31"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start41"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_start51"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                    <ImageView
+                        android:id="@+id/iv_start51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:src="@mipmap/icon_xx_sel" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:lines="1"
+                    android:text="老师分析的很到位！非常棒，感觉很有信心！"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize1" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/space_left"
+                    android:background="@color/textcolor3" />
+            </RelativeLayout>
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:background="#CC3300"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ask"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#CC3300"
+        android:text="提问"
+        android:textSize="@dimen/textsize1"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--自定义园-->
+    <color name="shape_circle_red">#ffe7181b</color>
+    <color name="shape_circle_green">#ff0b9c17</color>
+
+    <color name="received_red_text_color">#ff0000</color>
+    <color name="received_red_text_green">#00ff00</color>
+
+    <!--盘中直播-->
+    <color name="item_live_broadcast">#ffffffff</color>
+
+    <!--底部栏颜色-->
+    <color name="subzero_foot_color">#d45532</color>
+    <color name="subzero_foot_line">#DFDFDF</color>
+    <!--上传时间字体颜色-->
+    <color name="upload_textcolor">#666666</color>
+
+
+    <!--顶部导航栏字体颜色-->
+    <color name="subzero_head_checked_text_color">#cc3300</color>
+    <color name="subzero_head_unchecked_text_color">#ffffff</color>
+
+
+    <!--用户中心信息-->
+    <color name="usercenter_rl_bg">#CC3300</color>
+    <color name="usercenter_tv">#fff</color>
+
+    <!--用户中心字体颜色-->
+    <color name="textcolor1">#070707</color>
+    <color name="textcolor2">#505050</color>
+    <color name="textcolor3">#9E9E9E</color>
+
+    <!--分割线颜色-->
+    <color name="deline">#d7d7d7</color>
+    <color name="separation_line">#9E9E9E</color>
+    <color name="separation_rl_bg">#F3F5F7</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#CA3415</color>
+    <color name="title_bg_color">#FFcc3300</color>
+    <!--支付页面没有选中字体颜色-->
+    <color name="paymoney_unchecked">#f68820</color>
+    <color name="paymoney_checked">#fff</color>
+    <color name="gray_bg">#cccccc</color>
+    <color name="gray_dark_bg">#666666</color>
+
+    <!--主题颜色-->
+    <color name="top_color">#fd4b4d</color>
+    <color name="image_checked_bg">#66000000</color>
+
+    <!-- 菜单栏 按钮文字颜色 -->
+    <color name="topbar_btn_text_color">#ffffff</color>
+
+    <!-- 返回按钮 字体颜色 -->
+    <color name="back_color_noclick">#ffff</color>
+    <color name="back_color_click">#8fff</color>
+
+
+    <!--全局背景颜色-->
+    <color name="bgcolor">#F3F5F7</color>
+
+    <!--虚拟币 天气 时间 字体颜色 -->
+    <color name="coin_weather_time_textcolor">#939393</color>
+    <!--用户名字字体颜色-->
+    <color name="user_name_textcolor">#A9A9A9</color>
+    <color name="content_textcolor">#0A0A0A</color>
+</resources>

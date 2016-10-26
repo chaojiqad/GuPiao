@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usercenter_rl_layout_height"
+        android:background="@color/usercenter_rl_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_ico_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/textsize1"
+            android:textColor="@color/usercenter_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="172dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="请填写标题内容"
+            android:gravity="top"
+            android:textSize="@dimen/textsize1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/200"
+            android:textSize="@dimen/textsize1"
+            android:textColor="@color/textcolor3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="6dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_margin="@dimen/margin_left_right"
+        android:layout_height="56dp"
+        android:background="#CC3300"
+        android:text="提交"
+        android:textSize="@dimen/textsize1"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</LinearLayout>

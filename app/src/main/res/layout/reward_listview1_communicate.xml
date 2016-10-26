@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/basetitle_communicate" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3f5f7"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/videocatory_item_line"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="16dp"
+                    android:text="标题"
+                    android:textSize="@dimen/text_size_commit_reward" />
+
+                <EditText
+                    android:id="@+id/et_titlehint_communicate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="近日股市如何发展"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="16dp"
+                    android:textSize="@dimen/text_size_commit_reward" />
+
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+            <!--<include layout="@layout/item_title_mycommit_communicate" />-->
+
+            <LinearLayout
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f5f7"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/myCommit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="@dimen/text_size_commit_reward" />
+
+                    <TextView
+                        android:id="@+id/myHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv"
+                        android:textSize="@dimen/text_size_commit_reward" />
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#fff">
+
+                <ImageView style="@style/videocatory_item_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="10dp"
+                    android:text="悬赏金额"
+                    android:textSize="@dimen/text_size_commit_reward" />
+
+                <EditText
+                    android:id="@+id/et_ac_amount_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入悬赏金额"
+                    android:inputType="number"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="16dp"
+                    android:textSize="@dimen/text_size_commit_reward" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#f3f5f7"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/videocatory_item_line"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp" />
+
+                    <ImageView
+                        style="@style/videocatory_item_line"
+                        android:layout_alignParentBottom="true" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/reward_ac_et_mes"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请输入您要提问的问题"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="@dimen/text_size_commit_reward" />
+
+                <TextView
+                    android:id="@+id/reward_ac_tv_mes_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingBottom="6dp"
+                    android:paddingRight="10dp"
+                    android:text="0/300" />
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_alignParentBottom="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="(最多三张) 帮您准确描述问题" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <GridView
+                    android:id="@+id/reward_ac_gv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3" />
+
+                <ImageView
+                    android:id="@+id/reward_ac_iv_select_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@mipmap/bg_icon_xj" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_reward_ac_release"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cc3300"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</LinearLayout>

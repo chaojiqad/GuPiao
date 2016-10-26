@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_bg"
+        android:orientation="vertical">
+
+
+        <!--状态栏的高度-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_ac_rie_pwd_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:onClick="back"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@mipmap/nav_ico_back" />
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    style="@style/newsdetail"
+                    android:text="找回密码" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@mipmap/user" />
+
+                <EditText
+                    android:id="@+id/et_ac_rie_pwd_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/videocatory_item_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/user"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_ac_rie_pwd_check_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输验证码"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                    <com.subzero.shares.view.TimeDownButton
+                        android:id="@+id/btn_ac_rie_pwd_check_num"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/shape_rect_gray"
+                        android:text="获取验证码"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@mipmap/password" />
+
+                    <EditText
+                        android:id="@+id/et_ac_rie_pwd_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="密码输入6位及以上的新密码"
+                        android:inputType="numberPassword"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_ac_rie_pwd_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_rect_orange"
+                    android:text="确认"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

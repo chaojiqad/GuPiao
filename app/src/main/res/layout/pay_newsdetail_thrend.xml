@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+
+        <include layout="@layout/basetitle_communicate" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff">
+
+                <ImageView style="@style/videocatory_item_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:text="支付金额:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_money_pay"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/bg_pay_newsdetail_thrend"
+                    android:gravity="center"
+                    android:hint="支付单位为元"
+                    android:text="5元" />
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gv_pay_newsdetail_thrend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:columnWidth="105dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="10dp"
+                android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+        <ImageView style="@style/videocatory_item_line" />
+
+        <include layout="@layout/paylayout_common"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_mycommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/content_textcolor"
+        android:text="根据各种经济现象怎么判断股的变化"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/weather_mycommit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_mycommit"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="股票天气" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            android:visibility="gone"
+            android:paddingTop="2dp"
+            android:src="@mipmap/lis_icon_zf" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_virtual_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="10虚拟币" />
+
+        <TextView
+            android:id="@+id/time_communicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="12:34" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_1"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_2"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_3"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/videocatory_item_line" />
+
+        <ImageView
+            style="@style/videocatory_item_line"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</LinearLayout>

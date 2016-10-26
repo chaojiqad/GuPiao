@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <com.subzero.shares.view.CircleImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@mipmap/qq" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="28dp">
+
+            <TextView
+                android:id="@+id/tv_fortune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="10虚拟币"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textsize3" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/tv_fortune"
+                android:src="@mipmap/orange_big" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="34dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="首席顾问——李晨"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_left"
+            android:text="个人介绍："
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginTop="10dp"
+            android:lines="3"
+            android:text="如何从股票小白，快速成长为资深专家，精选每日事实话题，带你解开蒙面的面纱，课程精细，堪称绝！不想错过的朋友快来看看吧！"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginTop="10dp"
+            android:text="取得成绩："
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_glory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginTop="10dp"
+            android:text="炒股大赛二等奖"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize2" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deline"
+                android:layout_alignParentTop="true"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deline"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="收到的评论"
+                android:layout_marginLeft="@dimen/space_left"
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize2" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/deline"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

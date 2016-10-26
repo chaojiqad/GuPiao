@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_item_stockpool"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/shares" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_item_stockpool"
+            android:gravity="center"
+            android:text="今日黄金池"
+            android:paddingLeft="10dp"
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_item_stockpool"
+            android:background="@drawable/shape_rect_red"
+            android:text="黄金会员"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffd62320"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="2015-01-21"
+            android:textSize="@dimen/textsize2" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:src="@mipmap/bg_ico_time" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+</LinearLayout>

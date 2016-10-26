@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:padding="10dp"
+            android:text="冯小刚"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize1" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:text="14:18"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_start2"
+                android:src="@mipmap/icon_xx" />
+
+            <ImageView
+                android:id="@+id/iv_start2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_start3"
+                android:src="@mipmap/icon_xx_sel" />
+
+            <ImageView
+                android:id="@+id/iv_start3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_start4"
+                android:src="@mipmap/icon_xx_sel" />
+
+            <ImageView
+                android:id="@+id/iv_start4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_start5"
+                android:src="@mipmap/icon_xx_sel" />
+
+            <ImageView
+                android:id="@+id/iv_start5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_left"
+                android:src="@mipmap/icon_xx_sel" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="老师分析的很到位！非常棒，感觉很有信心！"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize1" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/deline" />
+
+</LinearLayout>

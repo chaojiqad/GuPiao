@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#cc3300">
+
+        <ImageButton
+            android:id="@+id/img_back"
+            style="@style/back"
+            android:onClick="back"
+            android:src="@mipmap/nav_ico_back" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/newsdetail" />
+
+        <ImageView
+            android:id="@+id/share_communicate"
+            style="@style/share"
+            android:src="@mipmap/nav_icon_fenxiang" />
+
+        <TextView
+            android:id="@+id/myCommit_text_rewardDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_marginRight="@dimen/margin_left_right" />
+    </RelativeLayout>
+</LinearLayout>

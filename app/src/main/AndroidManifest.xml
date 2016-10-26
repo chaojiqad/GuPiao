@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.subzero.shares"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <!--支付宝-->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+
+    <!--极光推送-->
+    <!-- Required 自定义用来收发消息的相关权限   此处并不是声明权限-->
+    <permission
+        android:name="com.subzero.shares.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <!--  这里是声明“自定义用来收发消息的相关权限”  权限的name和 “自定义用来收发消息的相关权限”name一致的   -->
+    <uses-permission android:name="com.subzero.shares.permission.JPUSH_MESSAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!--支付宝-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--shareSDK-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--xutils3.3权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--照片选择器-->
+    <!--在SDCard中创建与删除文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--往SDCard写入数据权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--从SDCard读取数据权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--mob-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/add"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105333191" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+        <!--微信分享回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name=".activity.OptionalStockQuizActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.PayPoolActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.newsdetail.PayActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UsercenterPayMoney"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.OptionalStockPoolActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalLiveBroadcast"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.newsdetail.NewsDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.newsdetail.ThrendClassDetail"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.newsdetail.UploadActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.OfferRewardActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalExperAnalysis"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.RegistActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RetrievePasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.IndexFragmentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UsercenterAskQuestion"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterCommonIssue"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterDataEditActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterNewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterIncomeRecord"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterSettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterVipActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.newsdetail.OpenAccountActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterWalletActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalExperDetail"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalLiveBroadcastDetail"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.communicate.MyCommitActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.RewardDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.ReportActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.MyCommitDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UserCityListActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.usercenter.UsercenterAboutUs"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UsercenterRenew"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterPersonalGroup"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.OptionalLiveBroadcastRelease"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalLiveBroadcastReleaseLable"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalExperAnalysisRecord"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalExperDetailAsk"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.OptionalExperAnalysisRecordDetail"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.communicate.ClassifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UsercenterOpenVipActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.usercenter.UsercenterChangeSex"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterChangePassword"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterConnectCustom"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.usercenter.UsercenterProfessionChoseActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.newsdetail.WebOpenCountActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.communicate.GameDetalActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.GameActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.communicate.JoinGameActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <!--融云-即时通讯-->
+        <!--会话界面-->
+        <!--融云-即时通讯-->
+        <!--会话界面-->
+        <activity
+            android:launchMode="singleTop"
+            android:name=".activity.rongcloud.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.subzero.shares"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activity.OptionalStockPoolItemActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.OptionalExperAnalysisComment"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+
+        <!--瓢虫-->
+        <activity
+            android:name=".github.ereza.activity.DefaultErrorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".github.activity.DefaultErrorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".github.activity.ErrorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activity.OptionalExperAnalysisNoRecord"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.OptionalExperAnalysisNoRecordDetail"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.Photo.SpaceImageDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+
+        <activity
+            android:name=".activity.OptionalBetActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.OptionalReplyActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.rongcloud.PhotoActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 微信支付-->
+        <activity
+            android:name=".activity.PayActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop" />
+
+        <!--极光推送-->
+
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.subzero.shares" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.subzero.shares" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!--Required  显示通知栏 -->
+                <category android:name="com.subzero.shares" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".broadcast.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.subzero.shares" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="bf9c9b1795506f222ebeecce" />
+        <!--  </>值来自开发者平台取得的AppKey-->
+
+    </application>
+
+</manifest>

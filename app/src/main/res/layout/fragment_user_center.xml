@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usercenter_rl_layout_height"
+        android:background="@color/usercenter_rl_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="@color/usercenter_tv"
+            android:textSize="@dimen/textsize1" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/bg_ic_shezhi" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="174dp"
+                android:background="@mipmap/backimageview">
+
+                <com.subzero.shares.view.CircleImageView
+                    android:id="@+id/iv_userlogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="14dp"
+                    android:src="@mipmap/qq" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_userlogo"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_rect_usercenter"
+                    android:gravity="center"
+                    android:text="普通会员"
+                    android:textColor="#E87373" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_sign"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/tv_usercenter_grade"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/shape_rect_solid_yellow"
+                    android:gravity="center"
+                    android:text="点击签到"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <!--分隔条-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="12dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_left"
+                android:paddingRight="@dimen/space_right">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                    <ImageView
+                        android:id="@+id/iv_item1"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_zl" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_item1"
+                        android:text="个人资料"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                    <ImageView
+                        android:id="@+id/iv_item2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_xxzx" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_item2"
+                        android:text="消息中心"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_left"
+                android:paddingRight="@dimen/space_right">
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_wallet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                    <ImageView
+                        android:id="@+id/iv_item3"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_many" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_item3"
+                        android:text="我的钱包"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_renew"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+
+                    <ImageView
+                        android:id="@+id/iv_item4"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_xf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_item4"
+                        android:text="缴费续费"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_deline" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_vip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                    <ImageView
+                        android:id="@+id/iv_item5"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_vip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_left"
+                        android:layout_toRightOf="@+id/iv_item5"
+                        android:text="开通会员"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="@dimen/textsize2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/list_icon_more" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:id="@+id/rl_exi"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="退出登录"
+                    android:textColor="@color/textcolor2"
+                    android:textSize="@dimen/textsize2" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_deline" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:background="@color/separation_rl_bg">
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

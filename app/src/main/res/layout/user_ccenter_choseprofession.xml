@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/basetitle_communicate" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="互联网|游戏|软件"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+
+                        android:id="@+id/tv_0_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_0"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="6dp"
+                        android:text="互联网|移动互联\n网|电子商务"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_0_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_0_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_0_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="网络游戏"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_0_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_0_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="14dp"
+                        android:text="计算机软件"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+
+                        android:id="@+id/tv_0_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_0_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="IT服务|系统集成"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="电子|通信|硬件"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_1_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_1"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="6dp"
+                        android:text="电子技术|半导体\n|集成电器"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_1_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_1_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="17dp"
+                        android:paddingTop="6dp"
+                        android:text="通信|(设备\n|运营|增值)"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_1_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:text="计算机硬件\n|网络设备"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="房地产|建筑|物业"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_2_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_2"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="房地产开发|建筑\n|建材|工程"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_2_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_2_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="规划|设计\n|装潢"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_2_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="6dp"
+                        android:text="房地产服务(物业\n管理)|地产经理"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="金融"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_3_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_3"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="15dp"
+                        android:text="银行"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_3_0"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/tv_3_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="36dp"
+                        android:paddingRight="36dp"
+                        android:paddingTop="15dp"
+                        android:text="保险"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_3_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="基金|证券|期货\n|投资"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_3_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="15dp"
+                        android:text="会计|审计"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_3_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_3_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_3_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:text="信托|担保|拍卖|典当"
+                        android:textColor="@color/content_textcolor" />
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="消费品"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_4"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="食品|饮料|烟酒\n|日化"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_4_0"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@id/tv_4_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="百货|批发\n|零售"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_4_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="服装服饰|纺织\n|皮革"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_4_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="14dp"
+                        android:text="家具|家电"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_4_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_4_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="办公用品\n及设备"
+                        android:textColor="@color/content_textcolor" />
+
+
+                    <TextView
+                        android:id="@+id/tv_4_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_4_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_4_4"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="14dp"
+                        android:text="奢侈品|收藏品"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_4_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_4_3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="工艺品|珠宝|玩具"
+                        android:textColor="@color/content_textcolor" />
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="汽车|机械|制造"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_5_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_5"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="汽车|摩托车"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_5_0"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/tv_5_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+
+                        android:paddingTop="6dp"
+                        android:text="机械制造|机电\n|重工"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_5_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_5_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="14dp"
+                        android:text="印刷|包装|造纸"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_5_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_5_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="原材料及加工"
+                        android:textColor="@color/content_textcolor" />
+
+
+                    <TextView
+                        android:id="@+id/tv_5_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_5_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_5_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="仪器|仪表|工业\n自动化|电气"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="服务|外包|中介"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="专业服务(咨询)|\n财会|法律|翻译等"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_6_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_6_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="中介服务"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_6_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="外包服务"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="14dp"
+                        android:text="检测|验证"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_6_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="办公用品及设备"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_6_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="旅游|酒店|餐饮\n服务|生活服务"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_6_4"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="14dp"
+                        android:text="娱乐|休闲|体育"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_6_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_6_3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="14dp"
+                        android:text="租赁服务"
+                        android:textColor="@color/content_textcolor" />
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="广告|传媒|教育|文化"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_7_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_7"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="6dp"
+                        android:text="广告|公关|市场\n推广|会展"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_7_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_7_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_7_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="6dp"
+                        android:text="影视|媒体|艺术\n|文化|出版"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_7_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_7_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="6dp"
+                        android:text="教育|培训|学术\n|科研|院校"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="交通|贸易|物流"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_8_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_8"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="交通|物流|运输"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_8_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_8_0"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/tv_8_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="14dp"
+                        android:text="贸易|进出口"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_8_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_8_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="航天|航空"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="制造|医疗"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_9_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_9"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="6dp"
+                        android:text="制药|生物工程\n|运输"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_9_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_9_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_9_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="6dp"
+                        android:text="医疗|保健|美容\n|卫生服务"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_9_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_9_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="14dp"
+                        android:text="医疗设备|器械"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="能源|化工|环保"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_10_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_10"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="能源(电力|水利)"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_10_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_10_0"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv_10_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="14dp"
+                        android:text="石油|石化|化工"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_10_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_10_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="采掘|冶炼|矿产"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_10_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_10_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="44dp"
+                        android:paddingRight="44dp"
+                        android:paddingTop="14dp"
+                        android:text="环境"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_10_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_10_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/tv_10_3"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="14dp"
+                        android:text="新能源"
+                        android:textColor="@color/content_textcolor" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    style="@style/videocatory_item_line"
+                    android:layout_marginTop="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="政府|农林牧渔"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_11_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_11"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="6dp"
+                        android:text="政府公共事业|\n非盈利机构"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_11_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_11_0"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/tv_11_0"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="14dp"
+                        android:text="农|林|牧|渔"
+                        android:textColor="@color/content_textcolor" />
+
+                    <TextView
+                        android:id="@+id/tv_11_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_11_0"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_profession"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:paddingTop="14dp"
+                        android:text="其他"
+                        android:textColor="@color/content_textcolor" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

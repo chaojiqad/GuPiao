@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/iv_expert"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+
+            android:src="@mipmap/adviser" />
+
+        <TextView
+            android:id="@+id/tv_professional_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_expert"
+            android:text="首席顾问:"
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/textsize2" />
+
+        <ImageView
+
+            android:id="@+id/iv_start1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_xx" />
+
+
+        <ImageView
+            android:id="@+id/iv_start2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_start1"
+            android:src="@mipmap/icon_xx" />
+
+        <ImageView
+            android:id="@+id/iv_start3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_start2"
+            android:src="@mipmap/icon_xx" />
+
+        <ImageView
+            android:id="@+id/iv_start4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_start3"
+            android:src="@mipmap/icon_xx" />
+
+        <ImageView
+            android:id="@+id/iv_start5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_start4"
+            android:src="@mipmap/icon_xx" />
+
+        <TextView
+            android:id="@+id/tv_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/iv_expert"
+            android:text="获得成绩:"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_glory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/tv_achievement"
+            android:text=" 炒股大赛一等奖"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_expert_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/iv_expert"
+            android:text="个人介绍:"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_expert_brief"
+            android:singleLine="true"
+            android:text="平台资深讲师，cctv特约嘉宾"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize2" />
+
+    </RelativeLayout>
+    <include layout="@layout/view_deline" />
+</LinearLayout>

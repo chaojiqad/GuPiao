@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="BigSmartTextView">
+        <attr name="bigtextSize" format="dimension" />//自定义属性,format属性表示该属性的单位
+        <attr name="smrattextSize" format="dimension" />
+        <attr name="smrattextcolor" format="color" />
+        <attr name="bigtextcolor" format="color" />
+        <attr name="bigtext" format="string" />
+        <attr name="smarttext" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+</resources>

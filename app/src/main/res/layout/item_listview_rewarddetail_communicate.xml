@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tv_user_name_communicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="冯小刚" />
+
+        <TextView
+            android:id="@+id/tv_coment_time_communicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="14:18" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_coment_communicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right"
+        android:textColor="@color/content_textcolor"
+        android:text="老师分析的很到位！非常棒，感觉很有信心！" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/iv_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/tv_good_num_communicate"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:src="@mipmap/icon_xx_sel" />
+
+        <TextView
+            android:id="@+id/tv_good_num_communicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/report_commmunicate"
+            android:layout_marginBottom="4dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/coin_weather_time_textcolor"
+            android:text="98" />
+
+        <TextView
+            android:id="@+id/report_commmunicate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:paddingRight="10dp"
+            android:textColor="#050505"
+            android:text="举报" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+</LinearLayout>

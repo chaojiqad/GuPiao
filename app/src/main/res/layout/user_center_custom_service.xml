@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+
+        <include layout="@layout/basetitle_communicate" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:text="感谢您对本公司的支持，有问\n题请发送至公司邮箱，我们会\n及时与您联系"
+            android:textSize="20sp" />
+
+        <ImageView style="@style/videocatory_item_line" />
+
+        <TextView
+            android:id="@+id/tv_user_custom_service_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:textSize="18sp" />
+        <ImageView style="@style/videocatory_item_line" />
+    </LinearLayout>
+</LinearLayout>

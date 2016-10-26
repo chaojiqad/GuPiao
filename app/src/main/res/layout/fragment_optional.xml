@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/usercenter_rl_layout_height"
+        android:background="@color/usercenter_rl_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="择机"
+            android:textColor="@color/usercenter_tv"
+            android:textSize="@dimen/textsize1" />
+
+        <TextView
+            android:id="@+id/tv_open_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_right"
+            android:text="开户"
+            android:textColor="#fff"
+            android:textSize="@dimen/textsize2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:id="@+id/iv_arraw"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:src="@mipmap/bg_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/iv_arraw"
+            android:text="股指竞猜结果"
+            android:textColor="@color/textcolor1"
+            android:textSize="@dimen/textsize1" />
+    </RelativeLayout>
+
+    <!--上证收红-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+
+            android:id="@+id/shape_circle_red"
+            style="@style/shape_circle_red_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_circle_red" />
+
+        <ProgressBar
+            android:id="@+id/received_red_progressbar"
+            style="@style/mProgressBar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/shape_circle_red"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/received_red_progressbar"
+            android:layout_marginRight="@dimen/space_right"
+            android:text="0%"
+            android:textSize="@dimen/textsize3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/received_red_progressbar"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/shape_circle_red"
+            android:text="上证收红"
+            android:textColor="#F10000"
+            android:textSize="@dimen/textsize1" />
+    </RelativeLayout>
+
+    <!--上证收绿-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+
+            android:id="@+id/shape_circle_green"
+            style="@style/shape_circle_red_style"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_circle_green" />
+
+        <ProgressBar
+            android:id="@+id/received_green_progressbar"
+            style="@style/mProgressBar1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/shape_circle_green"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tv_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/received_green_progressbar"
+            android:layout_marginRight="@dimen/space_right"
+            android:text="0%"
+            android:textSize="@dimen/textsize3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/received_green_progressbar"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/shape_circle_green"
+            android:text="上证收绿"
+            android:textColor="#2E6D00"
+            android:textSize="@dimen/textsize1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/separation_rl_bg">
+        <!--分隔线-->
+        <include layout="@layout/view_deline" />
+    </LinearLayout>
+
+    <include layout="@layout/view_deline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/optional_stock_quiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/contest" />
+
+            <ImageView
+                android:id="@+id/optional_quantitative_stock_pool"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/shares" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/optional_live_broadcast"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/trend" />
+
+            <ImageView
+                android:id="@+id/optional_expert_analysis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/adviser" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_ico_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsize1"
+                android:textColor="@color/usercenter_tv" />
+        </RelativeLayout>
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.股票基本小知识"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_item1"
+                android:layout_marginLeft="@dimen/space_left" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="84dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="@dimen/space_left"
+
+                />
+
+        </RelativeLayout>
+
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.股票基本小知识"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_item1"
+                android:layout_marginLeft="@dimen/space_left" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="84dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="@dimen/space_left"
+
+                />
+
+        </RelativeLayout>
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.股票基本小知识"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_item1"
+                android:layout_marginLeft="@dimen/space_left" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="84dp">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separation_line"
+                android:layout_alignParentBottom="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+                android:textSize="@dimen/textsize2"
+                android:textColor="@color/textcolor2"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="@dimen/space_left"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_usercenter_ll_layout_height"
+        android:text="提问"
+        android:textSize="@dimen/textsize2"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#CC3300"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

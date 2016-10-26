@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/search_title_thrend" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_uptime_cate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/videocatory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传时间" />
+
+
+                <ImageView style="@style/videocatory_item_line" />
+
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp">
+
+                </GridView>
+
+
+                <ImageView style="@style/videocatory_item_line" />
+
+
+                <TextView
+                    style="@style/videocatory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="课堂类别" />
+
+                <ListView
+                    android:id="@+id/lv_classify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#0000"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/listview_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include layout="@layout/noresult_search_thrend" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

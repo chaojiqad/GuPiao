@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_left"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:id="@+id/tv_op_ac_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="问诊提问"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+        </RelativeLayout>
+        <!--分割线-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+            <include layout="@layout/view_deline" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp">
+
+            <include layout="@layout/view_deline" />
+
+            <TextView
+                android:id="@+id/tv_quest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="提问"
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize2" />
+
+            <EditText
+                android:id="@+id/et_title_quest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_right"
+                android:layout_toRightOf="@+id/tv_quest"
+                android:background="@null"
+                android:hint="近日股市如何让发展"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+        </RelativeLayout>
+        <!--分割线-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:background="@color/separation_rl_bg">
+
+            <include layout="@layout/view_deline" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="172dp">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入您要提问的问题"
+                android:padding="10dp"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:text=""
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:background="@color/separation_rl_bg">
+
+            <include layout="@layout/view_deline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="(最多三张) 帮您描述准确问题"
+                android:textColor="@color/textcolor2"
+                android:textSize="@dimen/textsize3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="94dp">
+
+            <include layout="@layout/view_deline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <GridView
+                    android:id="@+id/reward_ac_op_ask"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3" />
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@mipmap/bg_icon_xj" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CC3300"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="@dimen/textsize1"
+
+        />
+</RelativeLayout>

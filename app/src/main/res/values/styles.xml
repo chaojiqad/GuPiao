@@ -1,0 +1,209 @@
+<resources>
+
+    <!--极光推送 -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!-- 顶部标题栏标题文本样式 -->
+    <style name="topbarTittleTheme">
+        <item name="android:textColor">@color/topbar_btn_text_color</item>
+        <!--
+        <item name="android:shadowColor">@color/gray</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1</item>
+        -->
+    </style>
+
+
+    <style name="AnimActivityTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/ActivityTranslateAnim</item>
+    </style>
+
+    <style name="ActivityTranslateAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--底部导航栏-->
+    <style name="rb_activity_index_foot_navi">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/footNavi_item_text_size</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/footNavi_item_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/footNavi_item_paddingBottom</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_activity_index_foot_text_color</item>
+    </style>
+
+    <!-- progress_horizontal红色 -->
+    <style name="mProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/layerlist_progressbar_color</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">5dp</item>
+    </style>
+    <!-- progress_horizontal绿色 -->
+    <style name="mProgressBar1">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/layerlist_progressbar_color1</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">5dp</item>
+    </style>
+
+    <!--上证收红自定义园-->
+    <style name="shape_circle_red_style">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">选</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+    <!--开户-->
+    <style name="rb_activity_index_head_kaihu">
+        <item name="android:textSize">@dimen/kaihu_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/kaihu_marginBottom</item>
+    </style>
+    <!--顶部导航栏-->
+    <style name="rb_activity_index_head_navi">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/head_item_text_size</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/head_item_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/head_item_paddingBottom</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffcc3300</item>
+    </style>
+
+
+    <style name="thrend_listview_pager1_newsdetial">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--新闻详情 分享-->
+    <style name="share" parent="@style/thrend_listview_pager1_newsdetial">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--新闻详情 返回-->
+    <style name="back" parent="@style/thrend_listview_pager1_newsdetial">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--新闻详情 -->
+    <style name="newsdetail" parent="@style/thrend_listview_pager1_newsdetial">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/subzero_head_unchecked_text_color</item>
+    </style>
+    <!--开户搜索布局-->
+    <style name="serch_newsdetail" parent="thrend_listview_pager1_newsdetial">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <!--搜索按钮-->
+    <style name="serchar">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">26dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+
+    <!--上传时间按钮背景样式-->
+    <style name="uploadtime_style">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_activity_uploadtime</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <!--视频类别-->
+    <style name="videocatory">
+        <item name="android:background">#f3f5f7</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+    <!--视频类别Item-->
+    <style name="videocatory_item" parent="videocatory">
+        <item name="android:background">#f8f8f8</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">#393939</item>
+        <item name="android:drawableRight">@drawable/selector_activity_uploadcatory_sel</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <!--线样式-->
+    <style name="videocatory_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#DEDEDE</item>
+    </style>
+    <!--视频类别线样式-->
+    <style name="videocatory_item_shortline" parent="videocatory_item_line">
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <!--交流页面内容图片尺寸-->
+    <style name="icon_wid_hei_communicate">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    <!--dialog样式-->
+    <style name="dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+
+</resources>

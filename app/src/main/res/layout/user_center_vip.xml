@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/nav_ico_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开通会员"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/textsize1"
+                android:textColor="@color/usercenter_tv" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="126dp"
+            android:layout_margin="12dp"
+            android:src="#ff0094ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_right"
+            android:textSize="@dimen/textsize3"
+            android:textColor="@color/textcolor2"
+            android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_right"
+            android:textSize="@dimen/textsize3"
+            android:textColor="@color/textcolor2"
+            android:text="数据显示，自1月8日两融余额跌破1.1万亿元之后，沪深两市两融余额继续下降，截至1月13日，沪深两市融资余额报10234.75亿元。较上一交易日再次回落187.63亿元，已经连降9日。其中，沪市融资报6004.45亿元，回落100.42亿元；深市融资余额报4235.30亿元，回落87.21亿元。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="开通黄金会员"
+            android:textSize="@dimen/textsize2"
+            android:textColor="#fff"
+            android:background="#CC3300"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="开通铂金会员"
+            android:textSize="@dimen/textsize2"
+            android:textColor="#fff"
+            android:background="#F68820"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

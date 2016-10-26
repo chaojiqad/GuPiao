@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_left"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="开通会员"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_user_ac_img"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_right"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_user_ac_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_right"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_openvip_god_usercenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#CC3300"
+            android:gravity="center"
+            android:text="开通黄金会员"
+            android:textColor="#fff"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/tv_openvip_ptgod_usercenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F68820"
+            android:gravity="center"
+            android:text="开通铂金会员"
+            android:textColor="#fff"
+            android:textSize="@dimen/textsize2" />
+    </LinearLayout>
+</RelativeLayout>

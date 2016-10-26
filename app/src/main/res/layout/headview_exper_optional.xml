@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="高管亲属增持100股中坚科技差点被退市"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="7月12日 13:30"
+            android:textColor="@color/coin_weather_time_textcolor" />
+
+        <ImageView
+            style="@style/videocatory_item_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_1"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:src="@drawable/ic_main" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_2"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:src="@drawable/ic_main" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:src="@drawable/ic_main" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            style="@style/icon_wid_hei_communicate"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/newsdetail"
+        android:textColor="#0D0D0D" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+
+        <ImageView style="@style/videocatory_item_line" />
+
+        <ImageView
+            style="@style/videocatory_item_line"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="我的回复"
+            android:textColor="#030303" />
+
+    </LinearLayout>
+</LinearLayout>

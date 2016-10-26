@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_left"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="续费缴费"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="174dp"
+                    android:background="@color/usercenter_rl_bg">
+
+                    <com.subzero.shares.view.CircleImageView
+                        android:id="@+id/iv_userlogo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_usercenter_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_userlogo"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textColor="#fff" />
+
+                    <TextView
+
+                        android:id="@+id/tv_usercenter_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_usercenter_grade"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="22dp"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+                <!--分隔线-->
+                <include layout="@layout/view_deline" />
+
+                <!--分隔条-->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="12dp"
+                    android:background="@color/separation_rl_bg">
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_deline" />
+
+                <LinearLayout
+                    android:id="@+id/ll_ac_usercenter_pay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:id="@+id/tv_ac_pay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="一个月"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge1"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="三个月"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge2"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="半年"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge3"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="一年"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge4"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+                </LinearLayout>
+
+
+                <!--分隔条-->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="12dp"
+                    android:background="@color/separation_rl_bg">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ac_usercenter_pay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:id="@+id/tv_ac_pay1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="一个月"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:text="200元"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge5"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="三个月"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge6"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="半年"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge7"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_left"
+                            android:text="一年"
+                            android:textColor="@color/textcolor2"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_user_ac_money8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="86dp"
+                            android:textColor="@color/usercenter_rl_bg"
+                            android:textSize="@dimen/textsize2" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge8"
+                            android:layout_width="72dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_right"
+                            android:background="@color/usercenter_rl_bg"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/textsize2" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/view_deline" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="16dp"
+                    android:background="@color/separation_rl_bg">
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_deline" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

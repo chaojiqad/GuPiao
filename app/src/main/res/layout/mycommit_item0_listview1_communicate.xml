@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#cc3300">
+
+        <ImageButton
+
+            android:background="@null"
+            android:padding="10dp"
+            style="@style/back"
+            android:src="@mipmap/nav_ico_back" />
+
+        <TextView
+            android:text="发布悬赏令"
+            android:id="@+id/textTitle"
+            style="@style/newsdetail" />
+    </RelativeLayout>
+</LinearLayout>

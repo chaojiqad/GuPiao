@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/usercenter_rl_layout_height"
+            android:background="@color/usercenter_rl_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:padding="@dimen/space_left"
+                android:src="@mipmap/nav_ico_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="发布直播"
+                android:textColor="@color/usercenter_tv"
+                android:textSize="@dimen/textsize1" />
+
+        </RelativeLayout>
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <TextView
+                android:id="@+id/tv_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="主题"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+
+            <EditText
+                android:id="@+id/et_edittheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:layout_toRightOf="@+id/tv_theme"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="近日如何让股市发展"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="开始时间"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:layout_toLeftOf="@+id/iv_right_arraw"
+                android:gravity="right"
+                android:hint="请选择开始时间"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <ImageView
+                android:id="@+id/iv_right_arraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:src="@mipmap/list_icon_more" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="结束时间"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:layout_toLeftOf="@+id/iv_right_arraw1"
+                android:gravity="right"
+                android:hint="请选择结束时间"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <ImageView
+                android:id="@+id/iv_right_arraw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:src="@mipmap/list_icon_more" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_left"
+                android:text="标签"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <TextView
+                android:id="@+id/tv_cls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:layout_toLeftOf="@+id/iv_right_arraw2"
+                android:gravity="right"
+                android:hint="请选择标签"
+                android:textColor="@color/textcolor1"
+                android:textSize="@dimen/textsize2" />
+
+            <ImageView
+                android:id="@+id/iv_right_arraw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_right"
+                android:src="@mipmap/list_icon_more" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_deline" />
+        <!--分隔条-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/separation_rl_bg">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_deline" />
+
+
+            <EditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入直播间描述"
+                android:gravity="start"
+                android:maxEms="150"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/tv_num_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingRight="10dp"
+                android:text="0/150"/>
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:background="#CC3300"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="#fff"
+                android:textSize="@dimen/textsize1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

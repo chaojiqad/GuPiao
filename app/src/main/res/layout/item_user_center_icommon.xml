@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_deline" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_usercenter_ll_layout_height">
+
+        <TextView
+            android:id="@+id/tv_item_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_toRightOf="@+id/iv_item1"
+            android:text="1.股票基本小知识"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="84dp">
+
+        <TextView
+            android:id="@+id/tv_item_center_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="让多数融资客想不到的是，在2016年开局之际，伴随市场大跌，融资融券余额节节败退，再次跌近万亿大关，由此引发的杠杆风险也让市场坐立不安。"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize2" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgcolor">
+
+        <ImageView
+            style="@style/videocatory_item_line"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

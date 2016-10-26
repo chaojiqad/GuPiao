@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+    android:orientation="vertical">
+
+    <ImageView
+        style="@style/videocatory_item_line"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/tv_calssify"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/text_size_commit_reward" />
+
+</LinearLayout>

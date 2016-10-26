@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="88dp">
+
+        <TextView
+            android:id="@+id/item_user_center_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_left"
+            android:layout_marginRight="@dimen/space_left"
+            android:layout_marginTop="10dp"
+            android:text="您的会员即将到期，请您续费，以免影响您的使用，到期日期2015-02-03"
+            android:textColor="@color/textcolor2"
+            android:textSize="@dimen/textsize1" />
+
+        <TextView
+            android:id="@+id/item_user_center_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/space_right"
+            android:text="12月24日 12:20"
+            android:textColor="@color/textcolor3"
+            android:textSize="@dimen/textsize3" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_deline" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+    <include layout="@layout/basetitle_communicate"/>
+    <TextView
+        android:id="@+id/tv_red_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+    <EditText
+        android:id="@+id/et_bet_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pay_bet_optional"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:numeric="integer"
+        android:hint="请输入下注虚拟币数"/>
+    <TextView
+        android:id="@+id/tv_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定"
+        android:background="#cc3300"/>
+    <TextView
+        android:id="@+id/tv_conunt_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:text="您的账户余额:"/>
+    </LinearLayout>
+
+</LinearLayout>
